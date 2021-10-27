@@ -34,6 +34,17 @@ value = Number(null) // 0
 value = Number('null') // NaN
 value = Number([1, 2, 3]) // NaN
 
+value = parseInt('1sdafasdfa')
+value = parseFloat('123.323')
+
+// Boolean
+value = Boolean('1')
+value = Boolean('')
+value = Boolean(undefined)
+value = Boolean(false)
+value = Boolean([])
+value = Boolean({})
+
 
 console.log(value);
 console.log(typeof value);
