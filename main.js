@@ -72,4 +72,21 @@
 // value = arr[value]
 // console.log(value);
 
+const firstName = 'Denis';
+const lastName = 'Ivanov';
+const age = 30;
+const str = 'Hello my name is Denis';
 
+let value;
+value = firstName + ' ' + lastName;
+value = firstName[firstName.length - 1]
+value = firstName.indexOf('n')
+value = str.indexOf('n', 11)
+value = str.indexOf('my')
+value = str.lastIndexOf('my')
+value = str.includes('my')
+value = str.slice(0, 5)
+value = str.slice(0, -3)
+value = str.replace('Denis', 'Roman')
+
+console.log(value);
