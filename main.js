@@ -45,7 +45,6 @@
 // value = Boolean([])
 // value = Boolean({})
 
-
 // console.log(value);
 // console.log(typeof value);
 // console.clear()
@@ -53,7 +52,6 @@
 // const num1 = 10;
 // const num2 = 20;
 // let value;
-
 
 // value = num1 + num2;
 // value += 100;
@@ -91,4 +89,29 @@
 
 // console.log(value);
 
+// Objects
+// const user = {
+//   firstName: "Denis",
+//   age: 30,
+//   isAdmin: true,
+//   email: "test@mail.ru",
+//   "user-address": {
+//     city: "Kyev",
+//   },
+//   skills: ["html", "css", "js"],
+// };
 
+// let prop = 'skills'
+
+// let value;
+// value = user[prop]
+
+// value = user.firstName = 'ROman'
+// user.info = 'some info'
+// value = user;
+// value = user['user-address'].country = 'Ukraine'
+// value = user;
+// user.plan = {}
+// user.plan.basik = 'basic'
+
+// console.log(value);
