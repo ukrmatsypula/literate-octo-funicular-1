@@ -115,3 +115,17 @@
 // user.plan.basik = 'basic'
 
 // console.log(value);
+
+// let a = -1;
+// let b = 0;
+
+// if (a > 0) {
+//   b = a;
+// } else {
+//   b += 1;
+// }
+
+// b = a > 1 ? a : b + 1;
+// b = a > 1 ? a : a < 0 ? 3 : 0;
+
+// console.log(b);
