@@ -182,3 +182,40 @@
 // for(let key in user) {
 //   console.log(user[key]);
 // }
+
+
+// ########****************************########
+// ########    function Declaration    ########
+// ########****************************########
+
+// sayHello()
+
+// function sayHello(firstName, lastName) {
+//   console.log(firstName, lastName);
+//   console.log('hello');
+//   return `Hello ${firstName} ${lastName}`
+// }
+
+// let res = sayHello('Roman', 'Matsypula')
+
+// console.log(res);
+
+// ########****************************########
+// ########    function expression    ########
+// ########****************************########
+
+// const squaere = function(x) {
+//   return x * x;
+// }
+
+// let result = squaere(5);
+// console.log(result);
+
+// ########****************************########
+// ########    function IIFE    ########
+// ########****************************########
+
+// (function(msg){
+//   console.log(msg);
+// }('hello world'))
+
