@@ -129,3 +129,56 @@
 // b = a > 1 ? a : a < 0 ? 3 : 0;
 
 // console.log(b);
+// while, do while, for, for 0f, for in
+
+// let i = 0;
+
+// while(i < 10) {
+//   console.log(i);
+//   i++;
+// }
+
+// do {
+//   console.log('action');
+// } while(i > 0)
+
+// for (let i = 0; i < 10; i++) {
+//   console.log(i);
+// }
+
+// let str = 'Hello my name is Roman';
+// let res = '';
+
+// for(let i = 0; i < str.length; i++) {
+//   res = str[i];
+//   console.log(res);
+// }
+
+// let colors = ["orange", "yellow", "blue"];
+
+// for (let i = 0; i < colors.length; i++) {
+//   colors[i] = colors[i].toUpperCase();
+// }
+
+// console.log(colors
+
+// const users = [
+//   { name: "Denis", age: 30 },
+//   { name: "Oleg", age: 22 },
+//   { name: "Roman", age: 27 },
+//   { name: "Maks", age: 34 },
+// ];
+
+// const usersObject = {};
+
+// for (let i = 0; i < users.length; i++) {
+//   usersObject[users[i].name] = users[i];
+// }
+
+// console.log(usersObject.Roman);
+
+// const user = { name: "Denis", age: 30 };
+
+// for(let key in user) {
+//   console.log(user[key]);
+// }
