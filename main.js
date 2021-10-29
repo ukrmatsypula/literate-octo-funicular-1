@@ -183,7 +183,6 @@
 //   console.log(user[key]);
 // }
 
-
 // ########****************************########
 // ########    function Declaration    ########
 // ########****************************########
@@ -219,3 +218,38 @@
 //   console.log(msg);
 // }('hello world'))
 
+// ########****************************########
+// ########    methods Arrays    ########
+// ########****************************########
+// const numArr = [2, 22, 32, 12, 43];
+// let value;
+
+// value = numArr.length;
+// value = Array.isArray(numArr);
+// value = numArr.indexOf(22);
+// value = numArr.push(3721);
+// value = numArr.pop(3721);
+// value = numArr.unshift(21);
+// value = numArr.shift(21);
+// value = numArr.slice(0, 2); //не изменяет исходный массив
+// value = numArr.splice(1, 0, "one", "two"); // изменяет массив
+// value = numArr.reverse(); // изменят массив
+// value = numArr.concat(2, 3, 4);
+// value = numArr.join(" ");
+// value = "hello world".split();
+
+// console.log(value, numArr);
+
+// function start() {
+//   let result = [];
+//   for (let i = 0; i < arguments.length; i++) {
+//     if (!Array.isArray(arguments[i])) {
+//       return console.error('elemen not array');
+//     }
+
+//      result.push(arguments[i].slice(1));
+//   }
+//   return console.log(result);
+// }
+
+// start([1, 2, 3], ['a', 'b', 'c']);
