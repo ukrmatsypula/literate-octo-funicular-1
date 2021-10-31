@@ -253,3 +253,58 @@
 // }
 
 // start([1, 2, 3], ['a', 'b', 'c']);
+
+// ########****************************########
+// ########    callback functions      ########
+// ########****************************########
+
+// let arr = ["Roman", "Ivan", "Maks"];
+
+// function mapArray(arr, cb) {
+//   let res = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     res.push(cb(arr[i]));
+//   }
+
+//   return res;
+// }
+
+// console.log(mapArray(arr, nameLength));
+
+// function nameLength(element) {
+//   return element.length;
+// }
+
+// function namesToUpperCase(element) {
+//   return element.toUpperCase();
+// }
+
+// console.log(mapArray(arr, namesToUpperCase));
+
+// function greeting (firstName) {
+//   return function (lastName) {
+//     return `Hello ${firstName} ${lastName}`;
+//   }
+// }
+
+// let result = greeting('Roman');
+// console.log(result('Matsypula'))
+
+// function answer(job) {
+//   const jobDictionary = {
+//     developer: 'что такое  javascript?',
+//     teacher: 'какой предмет вы ведете?'
+//   }
+//   return function (name) {
+//     return `${name}, ${jobDictionary[job]}`
+//   }
+// }
+// const developerQuerstion = answer('developer');
+// console.log(developerQuerstion('Roman'));
+
+// const teaherQuestion = answer('teacher');
+// console.log(teaherQuestion('Roman'))
+
+// const teaherQuestion2 = answer('ss');
+// console.log(teaherQuestion2('Romcccan'))
