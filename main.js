@@ -308,3 +308,59 @@
 
 // const teaherQuestion2 = answer('ss');
 // console.log(teaherQuestion2('Romcccan'))
+
+// function firstFunc(arr, fn) {
+//   let result = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     result.push(fn(arr[i]));
+//   }
+//   return `New value: ${result.join('')}`;
+// }
+
+// function handler1(el) {
+//   let result = el[0].toUpperCase();
+//   let result2 = el.replace(el[0], result);
+//   return result2;
+// }
+
+// function handler2(el) {
+//   return `${el * 10)+', '}`;
+// }
+
+// console.log(firstFunc(["my", "name", "is", "Trinity"], handler1));
+
+// console.log(firstFunc([10, 20, 30], handler2) )
+
+// function handler3(el) {
+//   return `${el.name} is ${el.age}, `
+// }
+
+// console.log(firstFunc([{age: 45, name: 'Jhon'}, {age: 20, name: 'Aaron'}], handler3));
+
+// function handler4(el) {
+//   let result = `${el.split('').reverse().join('')}, `;
+//   return result;
+// }
+
+// console.log(firstFunc(['abs', '123'], handler4));
+
+let arr = [1, 2, 3, 4, 5, 3, 2, 21, 4, 5, 3, 2, 23, 33, 3721];
+
+function every(arr, fn) {
+  let result = [];
+
+  for (let j = 0; j < arguments.length; j++) {
+    if(!Array.isArray(arguments[0]) && !typeof arguments[1] === 'function') {
+      console.error('Not array');
+    }
+  }
+
+  return result;
+}
+
+function handler1(el) {
+  return el;
+}
+
+console.log(every(arr, 123));
