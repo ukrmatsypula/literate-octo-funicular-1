@@ -345,22 +345,23 @@
 
 // console.log(firstFunc(['abs', '123'], handler4));
 
-let arr = [1, 2, 3, 4, 5, 3, 2, 21, 4, 5, 3, 2, 23, 33, 3721];
+// let arr = [1, 2, 3, 4, 5, 3, 2, 21, 4, 5, 3, 2, 23, 33, 3721];
 
-function every(arr, fn) {
-  let result = [];
+// function every(arr, fn) {
+//   let result = [];
 
-  for (let j = 0; j < arguments.length; j++) {
-    if(!Array.isArray(arguments[0]) && !typeof arguments[1] === 'function') {
-      console.error('Not array');
-    }
-  }
+//   for (let j = 0; j < arguments.length; j++) {
+//     if(!Array.isArray(arguments[0]) && typeof arguments[1] !== 'function') {
+//       console.error('Not array');
+//       console.log(arguments[j])
+//     }
+//   }
 
-  return result;
-}
+//   return result;
+// }
 
-function handler1(el) {
-  return el;
-}
+// function handler1(el) {
+//   return el;
+// }
 
-console.log(every(arr, 123));
+// console.log(every(arr, handler1));
