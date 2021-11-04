@@ -439,3 +439,10 @@
 // ########****************************########
 // ########    arrow functions      ########
 // ########****************************########
+
+const plus = (x = 0, y = 0) => x + y;
+console.log(plus());
+
+const withOutArgs = () => console.log("Hello world");
+const singleArgs = x => x * 2;
+console.log(singleArgs(2));
