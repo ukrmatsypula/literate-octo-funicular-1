@@ -365,3 +365,77 @@
 // }
 
 // console.log(every(arr, handler1));
+
+// function getThis() {
+//   console.log(this)
+// }
+
+// getThis()
+
+// ########****************************########
+// ########    this     ########
+// ########****************************########
+
+// function getPrice(currency = '$') {
+//   console.log(currency + this.price);
+//   return this;
+// }
+
+// function getName() {
+//   console.log(this.name);
+//   return this;
+// }
+
+// const product1 = {
+//   name: "Intel",
+//   price: 100,
+//   getPrice,
+//   getName,
+//   info: {
+//     information: ["2.3ghz"],
+//     getInfo: function () {
+//       console.log(this);
+//     },
+//   },
+// };
+
+// product1.getPrice();
+// product1.getName();
+// product1.info.getInfo();
+
+// getPrice();
+
+// const product2 = {
+//   name: "AMD",
+//   price: 50,
+//   getPrice,
+// };
+
+// product2.getPrice();
+
+// product2.getName = product1.getName;
+// product2.getName();
+
+// let str = "Hello world";
+// const reverseString = str.split("").reverse().join("");
+// console.log(reverseString);
+
+// const prod3 = {
+//   name: "ARM",
+//   price: 157,
+//   // getName,
+//   getPrice,
+// };
+
+// // prod3.getName().getPrice()
+// getPrice.call(prod3)
+
+// getName.apply(prod3)
+
+// const getPriceBind = prod3.getPrice.bind(prod3);
+
+// setTimeout(getPriceBind, 1000)
+
+// ########****************************########
+// ########    arrow functions      ########
+// ########****************************########
