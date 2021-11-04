@@ -440,9 +440,35 @@
 // ########    arrow functions      ########
 // ########****************************########
 
-const plus = (x = 0, y = 0) => x + y;
-console.log(plus());
+// const plus = (x = 0, y = 0) => x + y;
+// console.log(plus());
 
-const withOutArgs = () => console.log("Hello world");
-const singleArgs = x => x * 2;
-console.log(singleArgs(2));
+// const withOutArgs = () => console.log("Hello world");
+// const singleArgs = (x) => x * 2;
+// console.log(singleArgs(2));
+// const moreActtions = (a, b) => {
+//   a *= 2;
+//   b *= 3;
+//   return a + b;
+// };
+
+// console.log(moreActtions(2, 3));
+
+// const returnObj = (str = "") => ({ value: str, length: str.length });
+
+// console.log(returnObj("Hello world"));
+
+// const testObject = {
+//   age: 30,
+//   getFirstName2() {
+//     return console.log(this);
+//   },
+//   getAgeArrow: null,
+//   getAge() {
+//     console.log((this.getAgeArrow = () => console.log(this)));
+//   },
+// };
+
+// testObject.getFirstName2();
+// testObject.getAge();
+// testObject.getAgeArrow()
