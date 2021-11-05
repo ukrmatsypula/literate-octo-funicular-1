@@ -680,7 +680,6 @@ let users = [
 // let objJson = JSON.stringify(obj1);
 // newObj = JSON.parse(objJson)
 
-
 // console.log(newObj);
 
 // console.log(newObj === obj1);
@@ -695,6 +694,108 @@ let users = [
 // console.log(entries)
 // console.log(fromEntries)
 
+// ########****************************########
+// ########    destructurization      ########
+// ########****************************########
 
+// let user = {
+//   firstName: "Roman",
+//   lastName: "Matsypula",
+//   age: 27,
+//   info: {
+//     work: "easy code",
+//     skills: ["html", "css"],
+//   },
+// };
 
+// let { firstName: name, lastName, age: years = 30 } = user;
+// const {
+//   info: { work, skills },
+// } = user;
 
+// console.log(name, lastName, years);
+// console.log(work, skills);
+
+// const colors = ["white", "black", "red", "#dsdf"];
+// const [w, b, red, green = "green"] = colors;
+
+// const names = ["Denis", "Ivan", "Roman"];
+
+// const [name1, ...otherNames] = names;
+
+// console.log(name1, otherNames); // rest
+
+// let str = {...otherNames}
+
+// const [...newNames] = names; // rest
+// const newNames2 = [...names]; // spred
+
+// console.log(...newNames2);
+
+// const [den, , r] = names;
+
+// console.log(w, b, red, green);
+// console.log(den, r);
+
+// let nestedArr = ["hello world", ["key", "value"]];
+
+// const [, [k, value]] = nestedArr
+
+// console.log(k, value);
+
+let user = {
+  firstName: "Roman",
+  lastName: "Matsypula",
+  age: 27,
+  info: {
+    work: "easy code",
+    skills: ["html", "css"],
+  },
+};
+
+// const names = ["Denis", "Ivan", "Roman"];
+// const colors = ["orange", "white", "black"];
+
+// const colorNames = [...colors, ...names];
+
+// let newArr = names.concat(colors);
+
+// console.log(colorNames);
+
+let newUser = { ...user, age: 22 };
+
+// const {
+//   info: { skills: [html, css] },
+// } = user;
+
+// console.log(html, css);
+
+// function myPerson({
+//   lastName = "default lastName",
+//   firstName = "default firstName",
+//   info: { skills: [html, css] } = {},
+// } = {}) {
+//   console.log(lastName, firstName, html, css);
+// }
+
+// myPerson(newUser);
+
+// function foo(x, y, ...others) {
+//   console.log(arguments);
+//   console.log(Array.from(arguments));
+//   console.log([].slice.call(arguments));
+//   const [...args] = arguments;
+//   console.log(args);
+//   console.log(others);
+// }
+
+// foo(1, 2, 5, 4, 2);
+
+// const numbers = [11,2,3,4,5]
+
+// function foo2 (x, y) {
+//   console.log(x, y);
+
+// }
+
+// foo2(...numbers)
