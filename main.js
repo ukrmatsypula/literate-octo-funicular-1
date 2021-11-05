@@ -743,15 +743,15 @@ let users = [
 
 // console.log(k, value);
 
-let user = {
-  firstName: "Roman",
-  lastName: "Matsypula",
-  age: 27,
-  info: {
-    work: "easy code",
-    skills: ["html", "css"],
-  },
-};
+// let user = {
+//   firstName: "Roman",
+//   lastName: "Matsypula",
+//   age: 27,
+//   info: {
+//     work: "easy code",
+//     skills: ["html", "css"],
+//   },
+// };
 
 // const names = ["Denis", "Ivan", "Roman"];
 // const colors = ["orange", "white", "black"];
@@ -762,7 +762,7 @@ let user = {
 
 // console.log(colorNames);
 
-let newUser = { ...user, age: 22 };
+// let newUser = { ...user, age: 22 };
 
 // const {
 //   info: { skills: [html, css] },
@@ -799,3 +799,28 @@ let newUser = { ...user, age: 22 };
 // }
 
 // foo2(...numbers)
+
+// let user = {
+//   company: "Convidera",
+//   year: 2019,
+//   firstName: "Roman",
+//   lastName: "Matsypula",
+//   get job() {
+//     return `Roman работал в компании ${this.company} в ${this.year} году`;
+//   },
+//   get age() {
+//     return this.year;
+//   },
+//   set age(value) {
+//     this.year = value;
+//   },
+// };
+
+// Object.defineProperty(car, "age", {
+//   // configurable: false,
+//   // enumerable: false
+//   // writable: false,
+//   get: function() {
+//     return `Машина выпущена в ${this.year}`;
+//   },
+// });
