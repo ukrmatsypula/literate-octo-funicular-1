@@ -432,9 +432,7 @@
 
 // getName.apply(prod3)
 
-// const getPriceBind = prod3.getPrice.bind(prod3);
-
-// setTimeout(getPriceBind, 1000)
+// const getPriceBind = prMath.random().toString(36).substr(2, 9)
 
 // ########****************************########
 // ########    arrow functions      ########
@@ -472,3 +470,150 @@
 // testObject.getFirstName2();
 // testObject.getAge();
 // testObject.getAgeArrow()
+
+// ########****************************########
+// ########    array methods      ########
+// ########****************************########
+
+// forEach ничего не возвращает мутируя массив
+// filter
+// map возвращает новый массив
+// reduce формируем структуры из массива сделать обьект
+// some - boolean есть ли хотябы один елемент удовлятворяя условие
+// every
+// sort
+// find
+
+const users = [
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    index: 0,
+    isActive: false,
+    balance: 2397.64,
+    age: 39,
+    name: "Lucie Finley",
+    gender: "female",
+    company: "ZOXY",
+    email: "lucie@gmail.com",
+    phone: "+1 (842) 522-1243",
+    registered: "2015-0214T11:45:27 -02:00",
+  },
+
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    index: 1,
+    isActive: true,
+    balance: 1393.64,
+    age: 33,
+    name: "Woodvart Grims",
+    gender: "male",
+    company: "FORTEAN",
+    email: "lucie@gmail.com",
+    phone: "+1 (960) 012-3328",
+    registered: "2015-0214T11:45:27 -02:00",
+  },
+
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    index: 2,
+    isActive: true,
+    balance: 1699.99,
+    age: 25,
+    name: "Robinson Coleman",
+    gender: "male",
+    company: "GENNOM",
+    email: "lucie@gmail.com",
+    phone: "+1 (852) 542-3113",
+    registered: "2019-0214T11:45:27 -02:00",
+  },
+
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    index: 3,
+    isActive: true,
+    balance: 1297.1,
+    age: 18,
+    name: "Casandra Stout",
+    gender: "female",
+    company: "ANACHO",
+    email: "casandra@gmail.com",
+    phone: "+1 (929) 465-1111",
+    registered: "2020-0214T11:45:27 -02:00",
+  },
+
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    index: 4,
+    isActive: true,
+    balance: 1500,
+    age: 25,
+    name: "Alex Grown",
+    gender: "male",
+    company: "Convidera",
+    email: "alex@gmail.com",
+    phone: "+1 (852) 542-3113",
+    registered: "2021-0214T11:45:27 -02:00",
+  },
+
+  {
+    id: Math.random().toString(36).substr(2, 9),
+    index: 5,
+    isActive: false,
+    balance: 2165.48,
+    age: 20,
+    name: "Valencia Carridano",
+    gender: "male",
+    company: "XEREX",
+    email: "valencia@gmail.com",
+    phone: "+1 (988) 522-1243",
+    registered: "2014-0214T11:45:27 -02:00",
+  },
+];
+
+// forEach
+// user.forEach((user, i, arr) => {
+//   console.log(user, i, arr);
+//   return user.name + '!'
+// });
+
+// filter вернет новый массив
+// let less30 = user.filter((user) => user.age < 30)
+// console.log(less30);
+// let activeUsers = user.filter(user => user.isActive)
+// console.log(activeUsers);
+
+//map создает новый массив из колбека
+
+// let usersName = users.map(user => ({name: user.name, age: user.age}))
+// console.log(usersName);
+
+// reduce
+// let totalBalance = users.reduce((acc, element) => {
+//   acc += element.balance;
+//   return acc;
+// }, 0)
+
+// console.log(totalBalance);
+// let usersObject = users.reduce((acc, user) => {
+//   acc[user.id] = user;
+//   return acc;
+// }, {})
+
+// console.log(usersObject);
+
+//some
+// const isMale = users.every(user => user.age >= 18)
+// console.log(isMale);
+
+// find
+// const user = users.find(user => user.name === 'Valencia Carridano')
+// console.log(user);
+
+// sort
+
+// const strArr = ['Roman', 'Denis', 'Bill', 'Anna']
+// strArr.sort()
+// const numArr = [10, 9, 7, 44, 32];
+// users.sort((prevUser, nextUser) => prevUser.age - nextUser.age)
+// console.log(strArr);
+// console.log(users);
