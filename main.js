@@ -484,7 +484,7 @@
 // sort
 // find
 
-const users = [
+let users = [
   {
     id: Math.random().toString(36).substr(2, 9),
     index: 0,
@@ -617,3 +617,41 @@ const users = [
 // users.sort((prevUser, nextUser) => prevUser.age - nextUser.age)
 // console.log(strArr);
 // console.log(users);
+
+// ########****************************########
+// ########    closure      ########
+// ########****************************########
+
+// function getFullName(firstName, lastName) {
+//   return function() {
+//     return `${firstName} ${lastName}`
+//   }
+// }
+
+// let getParam = getFullName('Roman', 'Matsypula')
+// console.log(getParam());
+
+// function updateValue(val) {
+//   let x = val;
+//   return function(num){
+//     return x += num;
+//   }
+// }
+
+// let result = updateValue(10);
+// console.log(result(3));
+
+// function checkCred() {
+//   const login = "test";
+//   const password = "somePassword";
+
+//   return {
+//     checkLogin(value) {
+//       return login === value;
+//     },
+
+//     checkPassword(value) {
+//       return password === value;
+//     },
+//   };
+// }
