@@ -655,3 +655,46 @@ let users = [
 //     },
 //   };
 // }
+
+// ########****************************########
+// ########    methods Objects      ########
+// ########****************************########
+
+// Object.assign() делает только поверхносное копирование без вложенных обьектов
+
+// let obj1 = {
+//   name: "Roman",
+//   age: 27,
+//   info: {
+//     skills: ["html", "css"],
+//   },
+// };
+
+// let obj2 = {
+//   name: "Ivan",
+//   age: 20,
+// };
+
+// let newObj = Object.assign(obj1, obj2);
+// newObj = Object.assign({}, obj1)
+// let objJson = JSON.stringify(obj1);
+// newObj = JSON.parse(objJson)
+
+
+// console.log(newObj);
+
+// console.log(newObj === obj1);
+// console.log(obj1.info === newObj.info)
+
+// let keys = Object.keys(obj1)
+// let values = Object.values(obj1)
+// let entries = Object.entries(obj1)
+// let fromEntries = Object.fromEntries(entries)
+// console.log(keys)
+// console.log(values)
+// console.log(entries)
+// console.log(fromEntries)
+
+
+
+
