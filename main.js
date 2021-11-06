@@ -851,3 +851,32 @@ let users = [
 // // console.log(div.removeAttribute('data-scroll'))
 // div.dataset.scroll = 'Roman Myhailovich'
 // console.log(div.dataset.scroll);
+
+// ########****************************########
+// ########    work with fragment      ########
+// ########****************************########
+
+// let title = document.querySelector("h1");
+// title.innerHTML = "<span>Roman Myhailovich</span>";
+// title.textContent = "new text";
+// title.insertAdjacentHTML("beforebegin", "<h2>h2</h2>");
+
+// let span = document.createElement("span");
+// span.textContent = "test text";
+// span.classList.add("testClass");
+// title.appendChild(span);
+// console.log(span);
+
+// const fragment = document.createDocumentFragment();
+// const colors = ["black", "yellow", "orange"];
+// colors.forEach((color) => {
+//   const item = document.createElement("div");
+//   item.classList.add(`bg-color-${color}`);
+//   item.textContent = color;
+//   item.style.backgroundColor = color;
+//   item.style.color = 'magenta'
+//   fragment.appendChild(item);
+// });
+// document.body.appendChild(fragment);
+// console.log(fragment);
+// title.insertAdjacentElement()
