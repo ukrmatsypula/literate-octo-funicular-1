@@ -880,3 +880,29 @@ let users = [
 // document.body.appendChild(fragment);
 // console.log(fragment);
 // title.insertAdjacentElement()
+
+// ########****************************########
+// ########    events      ########
+// ########****************************########
+
+// let = clickHandler = (e) => {
+//   console.log("click", e);
+// };
+
+const container = document.querySelector(".container");
+const btn = document.querySelector("button");
+
+btn.addEventListener("click", (e) => {
+  const div = document.createElement("div");
+  const nestedBtn = document.createElement("button");
+  nestedBtn.textContent = "button";
+  div.textContent = Math.random();
+  div.appendChild(nestedBtn);
+  container.appendChild(div);
+});
+
+container.addEventListener("click", (e) => {
+  if (e.target.tagName === "BUTTON") {
+    console.log("button clicked");
+  }
+});
