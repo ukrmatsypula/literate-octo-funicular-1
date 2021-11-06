@@ -824,3 +824,30 @@ let users = [
 //     return `Машина выпущена в ${this.year}`;
 //   },
 // });
+
+// ########****************************########
+// ########    work with attributes      ########
+// ########****************************########
+
+// let str = 'Hello world';
+// console.dir(String)
+
+// const strObj = new String('Hello world')
+// console.log(strObj);
+
+// const link = document.querySelector(".link");
+// console.log(link);
+
+// const div = document.querySelector(".content");
+// div.classList.add('article', 'custom')
+// console.log(div.classList);
+// let hasClass = div.classList.contains('article')
+// console.log(hasClass);
+// div.classList.toggle('RM')
+// console.log(div.className);
+// console.log(link.href);
+// div.setAttribute('data-scroll', '#header')
+// // console.log(div.getAttribute('data-scroll'));
+// // console.log(div.removeAttribute('data-scroll'))
+// div.dataset.scroll = 'Roman Myhailovich'
+// console.log(div.dataset.scroll);
