@@ -33,5 +33,17 @@ const tasks = [
     return acc;
   }, {});
 
-  
+  renderAllTasks(objOfTasks);
+
+  function renderAllTasks(tasksList) {
+    if (!tasksList) {
+      console.error("Передайте список задач.");
+      return;
+    }
+
+    const fragment = document.createDocumentFragment();
+    Object.values(tasksList).forEach(task => {
+      console.log(task)
+    });
+  }
 })(tasks);
