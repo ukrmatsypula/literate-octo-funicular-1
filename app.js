@@ -33,6 +33,11 @@ const tasks = [
     return acc;
   }, {});
 
+  // Elements UI
+  const listContainer = document.querySelector(
+    ".tasks-list-section .list-group"
+  );
+
   renderAllTasks(objOfTasks);
 
   function renderAllTasks(tasksList) {
@@ -44,8 +49,9 @@ const tasks = [
     const fragment = document.createDocumentFragment();
     Object.values(tasksList).forEach((task) => {
       const li = listItemTemplate(task);
-      fragment.appendChild(li)
+      fragment.appendChild(li);
     });
+    listContainer.appendChild(fragment)
   }
 
   function listItemTemplate({ _id, title, body } = {}) {
