@@ -91,6 +91,7 @@ const tasks = [
 
   function onFormSubmitHandler(e) {
     e.preventDefault();
+
     const titleValue = inputTitle.value;
     const bodyValue = inputBody.value;
 
@@ -99,6 +100,21 @@ const tasks = [
       return;
     }
 
-    console.log("form submit", titleValue, bodyValue);
+    const task = createNewTask(titleValue, bodyValue);
+    const listItem = listItemTemplate(task);
+    listContainer.insertAdjacentElement("beforebegin", listItem);
+  }
+
+  function createNewTask(title, body) {
+    const newTask = {
+      title,
+      body,
+      completed: false,
+      _id: new Date().getTime().toString(36).substr(1, 9),
+    };
+
+    objOfTasks[newTask._id] = newTask;
+
+    return { ...newTask };
   }
 })(tasks);
