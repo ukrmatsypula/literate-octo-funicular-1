@@ -46,6 +46,7 @@ const tasks = [
 
   // Events
   form.addEventListener("submit", onFormSubmitHandler);
+  listContainer.addEventListener("click", onDeleteHandler);
 
   function renderAllTasks(tasksList) {
     if (!tasksList) {
@@ -70,6 +71,9 @@ const tasks = [
       "flex-wrap",
       "mt-2"
     );
+
+    li.setAttribute("data-task-id", _id);
+
     const span = document.createElement("span");
     span.textContent = title;
     span.style.fontWeight = "bold";
@@ -102,7 +106,7 @@ const tasks = [
 
     const task = createNewTask(titleValue, bodyValue);
     const listItem = listItemTemplate(task);
-    listContainer.insertAdjacentElement("beforebegin", listItem);
+    listContainer.insertAdjacentElement("afterbegin", listItem);
     form.reset();
   }
 
@@ -119,5 +123,33 @@ const tasks = [
     return { ...newTask };
   }
 
-  
+  function deleteTask(taskID) {
+    const { title } = objOfTasks[taskID];
+    const isConfirm = confirm(`Точно вы хотите удалить задачу? ${title}`);
+
+    if (!isConfirm) {
+      return isConfirm;
+    }
+
+    delete objOfTasks[taskID];
+    return isConfirm;
+  }
+
+  function deleteTaskFromHtml(confirmed, el) {
+    if (!confirmed) {
+      return;
+    }
+
+    el.remove();
+  }
+
+  function onDeleteHandler({ target }) {
+    if (target.classList.contains("delete-btn")) {
+      const parent = target.closest("[data-task-id]");
+      const id = parent.dataset.taskId;
+
+      const confirmed = deleteTask(id);
+      deleteTaskFromHtml(confirmed, parent);
+    }
+  }
 })(tasks);
