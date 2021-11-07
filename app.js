@@ -103,6 +103,7 @@ const tasks = [
     const task = createNewTask(titleValue, bodyValue);
     const listItem = listItemTemplate(task);
     listContainer.insertAdjacentElement("beforebegin", listItem);
+    form.reset();
   }
 
   function createNewTask(title, body) {
@@ -117,4 +118,6 @@ const tasks = [
 
     return { ...newTask };
   }
+
+  
 })(tasks);
